@@ -1,6 +1,6 @@
 /*
  * Arquivo: caminho.h
- * Autor(es): PREENCHER
+ * Autor(es): Iury Dias Ribeiro
  * Matricula(s): PREENCHER
  * Data: 19/10/2026
  */

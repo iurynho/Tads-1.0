@@ -1,7 +1,7 @@
 /*
  * Arquivo: lista.h
- * Autor(es): PREENCHER
- * Matricula(s): PREENCHER
+ * Autor(es): Iury Dias Ribeiro
+ * Matricula(s): 0071470
  * Data: 19/10/2026
  *
  * Interface da TAD Lista dinamica duplamente encadeada.
