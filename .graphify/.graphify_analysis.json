@@ -1,0 +1,240 @@
+{
+  "communities": {
+    "0": [
+      "grafo_gacriaaresta",
+      "grafo_gcriagrafointerno",
+      "grafo_gdevolvearestalivre",
+      "grafo_ggcarregagrafo",
+      "grafo_ggcriagrafo",
+      "grafo_ggdestroigrafo",
+      "grafo_ginsereordenado",
+      "grafo_glimpalista",
+      "grafo_gremovedalista",
+      "grafo_gvcriavertice",
+      "grafo_gverticenointervalo",
+      "grafo_removearesta",
+      "grafo_removevertice"
+    ],
+    "1": [
+      "grafo",
+      "grafo_gaprimaaresta",
+      "grafo_gaprimaentrada",
+      "grafo_gaprimasaida",
+      "grafo_gaproxaresta",
+      "grafo_gaproxentrada",
+      "grafo_gaproxsaida",
+      "grafo_gbuscanaestrela",
+      "grafo_ginumeroarestasmax",
+      "grafo_ginumeroverticesmax"
+    ],
+    "2": [
+      "main_teste",
+      "main_teste_criagrafoexemplo",
+      "main_teste_demonstracaminho",
+      "main_teste_gravaarquivo",
+      "main_teste_main",
+      "main_teste_testafila",
+      "main_teste_testagrafo",
+      "main_teste_testalimitesearquivosinvalidos",
+      "main_teste_testalista",
+      "main_teste_testapilha"
+    ],
+    "3": [
+      "grafo_gaprimeiraaresta",
+      "grafo_gaproximaaresta",
+      "grafo_gbsalvagrafo",
+      "grafo_ginumeroarestas",
+      "grafo_ginumerovertices",
+      "grafo_gnumeroarestasinterno",
+      "grafo_gnumeroverticesinterno",
+      "grafo_gverticescontiguos"
+    ],
+    "4": [
+      "caminho",
+      "caminho_gcaminho",
+      "caminho_gexecutabellmanford",
+      "caminho_gexecutadijkstra",
+      "caminho_gimprimepartida",
+      "caminho_gtempesonegativo"
+    ],
+    "5": [
+      "grafo_garestanointervalo",
+      "grafo_gbarestalaco",
+      "grafo_gbexisteidaresta",
+      "grafo_gvalfa",
+      "grafo_gvomega"
+    ],
+    "6": [
+      "grafo_gbexisteidvertice",
+      "grafo_gipegagrau",
+      "grafo_gvprimeirovertice",
+      "grafo_gvproximovertice",
+      "grafo_gvvizinho"
+    ],
+    "7": [
+      "grafo_gapegaarestadir",
+      "grafo_gbexistearestadir"
+    ],
+    "8": [
+      "grafo_gapegaaresta",
+      "grafo_gbexistearesta"
+    ]
+  },
+  "cohesion": {
+    "0": 0.21794871794871795,
+    "1": 0.35555555555555557,
+    "2": 0.4,
+    "3": 0.2857142857142857,
+    "4": 0.6666666666666666,
+    "5": 0.4,
+    "6": 0.4,
+    "7": 1,
+    "8": 1
+  },
+  "gods": [
+    {
+      "id": "grafo_gbexisteidaresta",
+      "label": "GBexisteIdAresta()",
+      "edges": 14,
+      "degree": 14
+    },
+    {
+      "id": "grafo_gbexisteidvertice",
+      "label": "GBexisteIdVertice()",
+      "edges": 12,
+      "degree": 12
+    },
+    {
+      "id": "grafo_gbuscanaestrela",
+      "label": "GbuscaNaEstrela()",
+      "edges": 9,
+      "degree": 9
+    },
+    {
+      "id": "grafo_gacriaaresta",
+      "label": "GAcriaAresta()",
+      "edges": 7,
+      "degree": 7
+    },
+    {
+      "id": "main_teste_main",
+      "label": "main()",
+      "edges": 7,
+      "degree": 7
+    },
+    {
+      "id": "grafo_gbsalvagrafo",
+      "label": "GBsalvaGrafo()",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "grafo_removearesta",
+      "label": "removeAresta()",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "grafo_removevertice",
+      "label": "removeVertice()",
+      "edges": 6,
+      "degree": 6
+    },
+    {
+      "id": "caminho_gcaminho",
+      "label": "Gcaminho()",
+      "edges": 5,
+      "degree": 5
+    },
+    {
+      "id": "grafo_gnumeroverticesinterno",
+      "label": "GnumeroVerticesInterno()",
+      "edges": 5,
+      "degree": 5
+    }
+  ],
+  "surprises": [
+    {
+      "source": "GAcriaAresta()",
+      "target": "GBexisteIdVertice()",
+      "source_files": [
+        "grafo.c",
+        "grafo.c"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 0 → community 6"
+    },
+    {
+      "source": "GAcriaAresta()",
+      "target": "GnumeroArestasInterno()",
+      "source_files": [
+        "grafo.c",
+        "grafo.c"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 0 → community 3"
+    },
+    {
+      "source": "GApegaAresta()",
+      "target": "GBexisteIdAresta()",
+      "source_files": [
+        "grafo.c",
+        "grafo.c"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 8 → community 5"
+    },
+    {
+      "source": "GApegaAresta()",
+      "target": "GBexisteIdVertice()",
+      "source_files": [
+        "grafo.c",
+        "grafo.c"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 8 → community 6"
+    },
+    {
+      "source": "GApegaArestaDir()",
+      "target": "GBexisteIdAresta()",
+      "source_files": [
+        "grafo.c",
+        "grafo.c"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 7 → community 5"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `GBexisteIdAresta()` connect `Community 5` to `Community 1`, `Community 8`, `Community 7`, `Community 3`, `Community 6`, `Community 0`?",
+      "why": "High betweenness centrality (0.020) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `GBexisteIdVertice()` connect `Community 6` to `Community 1`, `Community 0`, `Community 8`, `Community 7`, `Community 3`?",
+      "why": "High betweenness centrality (0.014) - this node is a cross-community bridge."
+    }
+  ],
+  "labels": {
+    "0": "Community 0",
+    "1": "Community 1",
+    "2": "Community 2",
+    "3": "Community 3",
+    "4": "Community 4",
+    "5": "Community 5",
+    "6": "Community 6",
+    "7": "Community 7",
+    "8": "Community 8"
+  },
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

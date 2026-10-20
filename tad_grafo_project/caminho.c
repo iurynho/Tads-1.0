@@ -1,7 +1,7 @@
 /*
  * Arquivo: caminho.c
- * Autor(es): Iury Dias Ribeiro
- * Matricula(s): 0071470
+ * Autor(es): PREENCHER
+ * Matricula(s): PREENCHER
  * Data: 19/10/2026
  *
  * Caminho minimo em grafo dirigido.

@@ -1,8 +1,6 @@
 /*
  * Arquivo: main_teste.c
  * Programa de demonstracao e testes das TADs.
- *  Autor(es): Iury Dias Ribeiro
- * Matricula(s): 0071470
  */
 
 #include "caminho.h"
